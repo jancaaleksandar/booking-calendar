@@ -31,6 +31,7 @@ lambdaHandler
   .handler(event, context)
   .then(async (response) => {
     fs.writeFileSync("response.json", JSON.stringify(response, null, 2));
+    console.log("THIS IS THE LAMBDA HANDLER RESPONSE : ",response)
   })
   .catch((error) => {
     console.log("THIS IS THE ERROR COMING FROM THE LAMBDAHANDLER ", error);
