@@ -35,7 +35,7 @@ async function BookingCalendar(args) {
     for (let i = 0; i < 5; i++) {
       console.log("Trying with premium proxies attempt : ", i + 1);
       const proxy =
-        "http://55b1b1397f189667fd5522445df00e1e1026d4a3:custom_headers=true&premium_proxy=true@proxy.zenrows.com:8001";
+        "http://55b1b1397f189667fd5522445df00e1e1026d4a3:custom_headers=true&premium_proxy=true&proxy_country=de@proxy.zenrows.com:8001";
       const httpsAgent = new HttpsProxyAgent(proxy);
 
       process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
